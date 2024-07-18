@@ -3,4 +3,4 @@
 set -euo pipefail
 
 curl -fsSLo ~/.tmux.conf https://raw.githubusercontent.com/myl7/config/main/tmux.conf
-curl -fsSLo- https://raw.githubusercontent.com/myl7/config/main/tmux.conf | sed '/signingkey = /d' | sed '/gpgsign = /d' > ~/.gitconfig
+curl -fsSLo- https://raw.githubusercontent.com/myl7/config/main/gitconfig | sed '/signingkey = /d' | sed '/gpgsign = /d' > ~/.gitconfig
